@@ -5,16 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <h1>Portifolio do Gustavo ❤</h1>
+        <div class="bem-vindo">
+            <h2>Bem vindo(a)</h2>
+            <button class="grid-item">Sobre mim</button>
+            <button class="grid-item">Habilidades</button>
+            <button class="grid-item">Projetos</button>
+        </div>
+        <div class="apresenta-me">
+            <h1 class="apresenta-text">Meu nome é <b class="gusta">Gustavo</b></h1>
+        </div>
     </header>
     <main>
+        <section class="sobre-mim">
+            <div>
+                <h2>Sobre mim</h2>
+                <p>
+                    Eu sou um estudante de 16 vivendo em Unaí-MG que esta se lançando no mercado de trabalho,
+                    em busca de conseguir um futuro na área.<br>
+                    Trabalho com <b>Dev FrontEnd</b>, <b>Edição de Videos e Fotos</b> e <b>Ilustrações</b> 
+                </p>
+            </div>
+        </section>
+        <section class="habilidades">
+            <div class="h-html">
+                <h2>HTML</h2>
+                <p>
+                    Eu escrevi todo o codigo HTML da pagina que você está vendo nesse exato instante, alem de todos os meus outros projetos
+                </p>
+            </div>
+            <div class="h-css">
+                <h2>CSS/SCSS</h2>
+                <p>
+                    Toda a estilisação dessa pagina tambem foi feita 100% por mim, e apenas um script foi usado de um repositorio open-source 
+                </p>
+            </div>
+            <div class="h-js">
+                <h2>JavaScript</h2>
+                <p>
+                    Eu tambem criei toda a funcionalidade e interação com usuario desta pagina e outros
+                    projetos disponiveis para visualização no meu github. Abaixo uma demonstração das minhas habilidades.
+                </p>
+            </div>
+            <div class="h-design">
+                <h2>Design Grafico</h2>
+                <p>
+                    Todos os icones e logos que estão nesse site e nessa seção foram criados
+                    por mim, todos foram feitos usando o photoshop.
+                </p>
+            </div>
+            <div class="h-draw">
+                <h2>Ilustrações</h2>
+                <p>
+                    Eu tambem ilusto varias artes digitais. Abaixo algumas que eu fiz:
+                </p>
+                <div class="h-draws">
+                    <img class="sect-img" src="images/draw1.png" alt="Gato de fogo e Cachorro de Agua">
+                    <img class="sect-img" src="images/draw2.png" alt="Meditação">
+                    <img class="sect-img" src="images/draw3.png" alt="Fan art Bayonetta">
+                </div>
+            </div><!--
+            <div class="h-edit">
+                <h2>Edição de video</h2>
+            </div>
+        </section>-->
+        <section class="projetos">
 
+        </section>
     </main>
     <footer>
-
+        <div>
+            <h3>Help</h3>
+            <a href="#">Github</a>
+            <a href="#">Linkedin</a>
+        </div>
     </footer>
+    <script src="scripts/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,54 @@
+body {
+  background-color: #210535;
+  font-family: sans-serif;
+  color: #fff3fb;
+}
+body button {
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #b274c8;
+  border: 0;
+  transition: 200ms;
+}
+body button:hover {
+  background-color: #64337d;
+  color: #fff3fb;
+  cursor: pointer;
+}
+body h1 {
+  color: #b274c8;
+}
+body h2 {
+  color: #9046ff;
+}
+body img {
+  width: 300px;
+}
+body a {
+  color: #d98afd;
+}
+body div {
+  background: #360d4b;
+  padding: 16px;
+  margin-bottom: 10px;
+  width: 35%;
+}
+
+.bem-vindo {
+  text-align: center;
+}
+
+.apresenta-me {
+  width: auto;
+  height: 600px;
+}
+.apresenta-me .apresenta-text {
+  position: absolute;
+  font-size: 70px;
+  transform: translate(5%, 220%);
+  color: #fff3fb;
+}
+.apresenta-me .apresenta-text b {
+  color: yellow;
+}/*# sourceMappingURL=style.css.map */

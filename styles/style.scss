@@ -1,0 +1,62 @@
+$main-color: #b274c8;
+$sub-color: #64337d;
+$bg-color: #210535;
+$high-color-a: #9046ff;
+$high-color-b: #e769fd;
+$high-color-c: #d98afd;
+$border-color: #360d4b;
+$text-color: #fff3fb;
+
+body{
+    background-color: $bg-color;
+    font-family: sans-serif;
+    color: $text-color;
+    button{
+        font-size: 20px;
+        border-radius: 15px;
+        padding: 5px;
+        background-color: $main-color;
+        border: 0;
+        transition: 200ms;
+        &:hover{
+            background-color: $sub-color;
+            color: #fff3fb;
+            cursor: pointer;
+        }
+    }
+    h1{
+        color: $main-color;
+    }
+    h2{
+        color: $high-color-a;
+    }
+    img{
+        width: 300px;
+    }
+    a{
+        color: $high-color-c;
+    }
+    div{
+        background: $border-color;
+        padding: 16px;
+        margin-bottom: 10px;
+        width: 35%;
+    }
+}
+
+.bem-vindo{
+    text-align: center;
+}
+.apresenta-me{
+    width: auto;
+    height: 600px;
+    .apresenta-text{
+        position: absolute;
+        font-size: 70px;
+        transform: translate(5%, 220%);
+        color: $text-color;
+        b{
+            color: yellow;
+        }
+    }
+}
