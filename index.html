@@ -4,85 +4,182 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
+    <title>Gustavo - Portfolio</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <div class="bem-vindo">
-            <h2>Bem vindo(a)</h2>
-            <button class="grid-item">Sobre mim</button>
-            <button class="grid-item">Habilidades</button>
-            <button class="grid-item">Projetos</button>
-        </div>
-        <div class="apresenta-me">
-            <h1 class="apresenta-text">Meu nome é <b class="gusta">Gustavo</b></h1>
-        </div>
+        <nav class="header-navbar">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a id="nav-home nav-link" href="#landing-sect">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <polyline points="5 12 3 12 12 3 21 12 19 12"></polyline>
+                            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                            <rect x="10" y="12" width="4" height="4"></rect>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav-about nav-link" href="#about-sect">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-question-mark" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4"></path>
+                            <line x1="12" y1="19" x2="12" y2="19.01"></line>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav-hability nav-link" href=".skill-sect">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-flame" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav-projects nav-link" href=".project-sect" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section class="sobre-mim">
-            <div>
-                <h2>Sobre mim</h2>
-                <p>
-                    Eu sou um estudante de 16 vivendo em Unaí-MG que esta se lançando no mercado de trabalho,
-                    em busca de conseguir um futuro na área.<br>
-                    Trabalho com <b>Dev FrontEnd</b>, <b>Edição de Videos e Fotos</b> e <b>Ilustrações</b> 
-                </p>
+        <section class="landing-sect">
+            <div class="main-content">
+                <div class="shapes">
+                    <div class="sqr pink"></div>
+                    <div class="sqr blue"></div>
+                    <div class="sqr pink"></div>
+                    <div class="sqr blue"></div>
+                    <div class="crl pink"></div>
+                    <div class="crl blue"></div>
+                    <div class="bal blue"></div>
+                    <div class="bal pink" id="inter"></div>
+                </div>
+                <h1>Oi eu sou o Gustavo!</h1>
+            </div>
+            <div class="arrows-div">
+                <span>Scroll Down</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-triangle-inverted" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 4h14a2 2 0 0 1 1.84 2.75l-7.1 12.25a2 2 0 0 1 -3.5 0l-7.1 -12.25a2 2 0 0 1 1.75 -2.75"></path>
+                 </svg>
             </div>
         </section>
-        <section class="habilidades">
-            <div class="h-html">
-                <h2>HTML</h2>
+        <section class="about-sect">
+            <div class="about-text hidden">
+                <h2 class="main-title">< Sobre mim ></h2>
                 <p>
-                    Eu escrevi todo o codigo HTML da pagina que você está vendo nesse exato instante, alem de todos os meus outros projetos
+                    De dia um estudante, de noite um web designer,
+                    eu estou sempre buscando novas formas criativas
+                    de fazer coisas cotidianas que você sempre vê em
+                    sites pela internet, sempre busco optar pelo caminho
+                    mais animado e colorido do que algo fixo e sem cor,
+                    e usando um pouco de HTML, CSS e Javascript posso
+                    fazer com que as pessoas fiquem deslumbradas apenas
+                    por navegar pela internet!
                 </p>
-            </div>
-            <div class="h-css">
-                <h2>CSS/SCSS</h2>
-                <p>
-                    Toda a estilisação dessa pagina tambem foi feita 100% por mim, e apenas um script foi usado de um repositorio open-source 
-                </p>
-            </div>
-            <div class="h-js">
-                <h2>JavaScript</h2>
-                <p>
-                    Eu tambem criei toda a funcionalidade e interação com usuario desta pagina e outros
-                    projetos disponiveis para visualização no meu github. Abaixo uma demonstração das minhas habilidades.
-                </p>
-            </div>
-            <div class="h-design">
-                <h2>Design Grafico</h2>
-                <p>
-                    Todos os icones e logos que estão nesse site e nessa seção foram criados
-                    por mim, todos foram feitos usando o photoshop.
-                </p>
-            </div>
-            <div class="h-draw">
-                <h2>Ilustrações</h2>
-                <p>
-                    Eu tambem ilusto varias artes digitais. Abaixo algumas que eu fiz:
-                </p>
-                <div class="h-draws">
-                    <img class="sect-img" src="images/draw1.png" alt="Gato de fogo e Cachorro de Agua">
-                    <img class="sect-img" src="images/draw2.png" alt="Meditação">
-                    <img class="sect-img" src="images/draw3.png" alt="Fan art Bayonetta">
+                <div class="landing-links">
+                    <a class="landing-link" href="https://github.com/Gravyard-Gay" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="64" height="64" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+                        </svg>
+                    </a>
+                    <a class="landing-link" href="https://www.linkedin.com/in/gustavo-duarte-cardoso-48a200253/" target="_blank" style="margin-left: 2rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="64" height="64" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                            <line x1="8" y1="11" x2="8" y2="16"></line>
+                            <line x1="8" y1="8" x2="8" y2="8.01"></line>
+                            <line x1="12" y1="16" x2="12" y2="11"></line>
+                            <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                         </svg>
+                    </a>
                 </div>
-            </div><!--
-            <div class="h-edit">
-                <h2>Edição de video</h2>
             </div>
-        </section>-->
-        <section class="projetos">
+            <div class="about-exaple hidden"> <!-- [todo] Colocar uma imagem minha ao clicar -->
+                <img src="images/svg/exaple.svg" alt="Pessoa em um computador" id="myPic" data-tilt>
+            </div>
+        </section>
+        <section class="skill-sect">
+            <div class="skill-wrapper hidden">
+                <h2 style="font-size: 58px;">{ Experiências }</h2>
+                <div class="hab-selector">
+                    <ul class="hab-list">
+                        <li class="hab-item">
+                            <button id="htmlBtn">Cards Transparentes</button>
+                        </li>
+                        <li class="hab-item">
+                            <button id="cssBtn">Color Randomizer</button>
+                        </li>
+                        <li class="hab-item">
+                            <button id="jsBtn">👀👀👀👀</button>
+                        </li>
+                    </ul>
+                    <div class="hab-display hidden">
+                        <h3 id="hab-display-title">Cards Transparentes</span> </h3>
+                        <span id="hab-display-text">
+                            Cards animados que reagem com css e com o <a target="_blank" href="https://micku7zu.github.io/vanilla-tilt.js/">vanilla_tilt.js</a> que suportão todos os tipos de media, perfeitos para serem usados para expor informações de forma mais intereçante e criativa. <br> <a target="_blank" href="https://github.com/Gravyard-Gay/Transparent-Card">Repositorio do Github</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project-sect">
+            <div class="hidden">
+                <h2 class="main-title">[ Projetos ]</h2>
+                <div class="projects-list">
+                    <div class="project" data-tilt>
+                        <img src="images/png/Project login.png" alt="Tela de login" class="project-img">
+                        <div class="project-image">
+                            <span>
+                                Uma tela de login responsiva feita completamente com CSS. Pode ser usada
+                                em varios tipos de sites.
+                            </span>
+                        </div>
+                        <a href="https://github.com/Gravyard-Gay/login-screen" target="_blank"><span>Tela de Login</span></a>
+                    </div>
+                    <div class="project" data-tilt>
+                        <img src="images/png/Project Nav.png" alt="Barra de Navegação" class="project-img">
+                        <div class="project-image">
+                            <span>
+                                Uma barra de navegação completamente responsiva e animada que pode ser
+                                facilmente tematizada com Javascript e automaticamente se ajusta com o
+                                tamanho da sua tela.
+                            </span>
+                        </div>
+                        <a href="https://github.com/Gravyard-Gay/animated-navbar" target="_blank"><span>Navbar Responsiva</span></a>
+                    </div>
+                    <div class="project" data-tilt>
+                        <img src="images/png/Project Py.png" alt="Terminal para um diario" class="project-img">
+                        <div class="project-image">
+                            <span>
+                                Um diario que automaticamente salva suas entradas com a data atual. feito
+                                completamente em python.
+                            </span>
+                        </div>
+                        <a href="https://github.com/Gravyard-Gay/automatic-diary" target="_blank"><span>Diario em Python</span></a>
+                    </div>
+                </div>
 
+            </div>
+        </section>
+        <section class="footer">
+            <div class="hidden">
+                <span>Email: <b>gravyardgustavo@gmail.com</b></span><br>
+                <span><a target="_blank" href="https://github.com/Gravyard-Gay">Github: <b>Gravyard-Gay</b></a></span><br>
+                <span><a target="_blank" href="https://www.linkedin.com/in/gustavo-duarte-cardoso-48a200253/">Linkedin</a></span>
+            </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <h3>Help</h3>
-            <a href="#">Github</a>
-            <a href="#">Linkedin</a>
-        </div>
-    </footer>
-    <script src="scripts/app.js"></script>
+    <script src="scripts/style.js"></script>
+    <script src="scripts/vanillaTilt.js"></script>
 </body>
 </html>
