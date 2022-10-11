@@ -50,11 +50,7 @@ main {
 a {
     color: var(--highlight-col);
 }
-h2 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 70px;
-    color: var(--highlight-col);
-}
+
 //#endregion
 //#region [Scroll bar]
 ::-webkit-scrollbar {background: var(--bg-col-secn);}
@@ -374,33 +370,21 @@ h2 {
             font-size: 18px;
             width: 90vw;
         }
-        img {
-            width: 95vw;
-        }
+        img {width: 95vw;}
     }
     .skill-sect {
-        h2 {
-            font-size: 60px;
-        }
-        h3 {
-            font-size: 30px;
-        }
-        span {
-            font-size: 16px;
-        }
-        button:hover {
-            border-radius: 10px;
-        }
+        h2 {font-size: 30px;}
+        h3 {font-size: 25px;}
+        span {font-size: 16px;}
+        button:hover {border-radius: 10px;}
     }
-    .hab-section {
-        height: 70vh;
-    }
-    .hab-selector {
-        grid-template-rows: 1fr 2fr;
-    }
+    .hab-item button {font-size: 35px; width: 360px;}
+    .hab-section {height: 70vh;}
+    .hab-selector {grid-template-rows: 1fr 2fr;}
     .hab-display {
-        height: 450px;
-        width: 420px;
+        height: 400px;
+        width: 300px;
+        justify-self: center;
     }
     .landing-sect {
         h1 {
@@ -410,14 +394,23 @@ h2 {
             top: 3rem;
         }
     }
-    .projects-list {
-        flex-direction: column;
-    }
-    .main-content h1 {
-        translate: 75px -70px;
-    }
+    .projects-list {flex-direction: column;}
+    .main-content h1 {translate: 57px -70px;}
     .project-sect {
-        height: 140vh;
+        height: 130vh;
+        h2 {
+            display: block;
+            text-align: center;
+        }
+        .project {
+            scale: 0.7;
+            margin-top: -3rem;
+        }
+    }
+    h2 {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 40px;
+        color: var(--highlight-col);
     }
 }
 @media only screen and (min-width: 600px) {
@@ -435,5 +428,10 @@ h2 {
     }
     .project-sect {
         height: 80vh;
+    }
+    h2 {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 70px;
+        color: var(--highlight-col);
     }
 }

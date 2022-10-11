@@ -46,12 +46,6 @@ a {
   color: var(--highlight-col);
 }
 
-h2 {
-  font-family: "Quicksand", sans-serif;
-  font-size: 70px;
-  color: var(--highlight-col);
-}
-
 ::-webkit-scrollbar {
   background: var(--bg-col-secn);
 }
@@ -396,16 +390,20 @@ h2 {
     width: 95vw;
   }
   .skill-sect h2 {
-    font-size: 60px;
+    font-size: 30px;
   }
   .skill-sect h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .skill-sect span {
     font-size: 16px;
   }
   .skill-sect button:hover {
     border-radius: 10px;
+  }
+  .hab-item button {
+    font-size: 35px;
+    width: 360px;
   }
   .hab-section {
     height: 70vh;
@@ -414,8 +412,9 @@ h2 {
     grid-template-rows: 1fr 2fr;
   }
   .hab-display {
-    height: 450px;
-    width: 420px;
+    height: 400px;
+    width: 300px;
+    justify-self: center;
   }
   .landing-sect h1 {
     font-size: 70px;
@@ -427,10 +426,23 @@ h2 {
     flex-direction: column;
   }
   .main-content h1 {
-    translate: 75px -70px;
+    translate: 57px -70px;
   }
   .project-sect {
-    height: 140vh;
+    height: 130vh;
+  }
+  .project-sect h2 {
+    display: block;
+    text-align: center;
+  }
+  .project-sect .project {
+    scale: 0.7;
+    margin-top: -3rem;
+  }
+  h2 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 40px;
+    color: var(--highlight-col);
   }
 }
 @media only screen and (min-width: 600px) {
@@ -448,5 +460,10 @@ h2 {
   }
   .project-sect {
     height: 80vh;
+  }
+  h2 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 70px;
+    color: var(--highlight-col);
   }
 }/*# sourceMappingURL=style.css.map */
