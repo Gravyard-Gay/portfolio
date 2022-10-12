@@ -37,15 +37,15 @@ function changeDisplay() {
     //#region [ Text deciding ]
     if (this.id=='htmlBtn') {
         title = 'Cards Transparentes'
-        p = 'Cards animados que reagem com css e com o <a target="_blank" href="https://micku7zu.github.io/vanilla-tilt.js/">vanilla_tilt.js</a> que suportão todos os tipos de media, perfeitos para serem usados para expor informações de forma mais intereçante e criativa. <br> <a target="_blank" href="https://github.com/Gravyard-Gay/Transparent-Card">Repositorio do Github</a>'
+        p = 'Cards animados que reagem com css e com o <a target="_blank" href="https://micku7zu.github.io/vanilla-tilt.js/">vanilla_tilt.js</a> que suportam todos os tipos de mídia, perfeitos para serem usados para expor informações de forma mais intereçante e criativa. <br> <a target="_blank" href="https://github.com/Gravyard-Gay/Transparent-Card">Repositório do Github</a>'
     }
     else if (this.id=='cssBtn') {
         title = 'Color Randomizer'
-        p = 'Uma pequena experiencia feita com javascript e css puro, onde é criada aleatóriamente uma cor e uma palheta de cores em codigo hex, tudo com apenas javascipt e variaveis do css.<br> <a target="_blank" href="https://github.com/Gravyard-Gay/Color-Randomizer">Repositorio do Github</a>'
+        p = 'Uma pequena experiência feita com javascript e css puro, onde é criada aleatoriamente uma cor e uma palheta de cores em código hex, tudo com apenas javascipt e variáveis do css.<br> <a target="_blank" href="https://github.com/Gravyard-Gay/Color-Randomizer">Repositório do Github</a>'
     }
     else if (this.id=='jsBtn') {
         title = 'Mais por vir...'
-        p = 'Muitos outros projetos ainda vão ser adcionados nessa pagina e muito provavelmente essa pagina tambem vai ser modificada, mas isso faz parte. Logo se você se interesou com qualquer projeto nesse site, sinta-se livre em me mandar um email e eu vou responder prontamente preparado para o trabalho!<br><b>gravyardgustavo@gmail.com</b>'
+        p = 'Muitos outros projetos ainda vão ser acionados nessa página e muito provavelmente essa pagina também vai ser modificada, mas isso faz parte. Logo se você se interessou com qualquer projeto nesse site, sinta-se livre em me mandar um email e eu vou responder prontamente preparado para o trabalho!<br>gravyardgustavo@gmail.com'
     }
     else if (this.id=='pyBtn') {
         title = '( Python )'
