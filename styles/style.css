@@ -129,21 +129,17 @@ a {
   height: 250px;
   border-radius: 42px;
   left: 20rem;
-  animation: yClimb 1s 0.2s backwards;
 }
 .sqr:nth-child(1) {
   translate: 1rem;
-  animation: yFall 1s 0.1s backwards;
 }
 .sqr:nth-child(2) {
   left: 40rem;
   rotate: 45deg;
-  animation: yClimb 1s 0.2s backwards;
 }
 .sqr:nth-child(3) {
   left: 40rem;
   rotate: 45deg;
-  animation: yFall 1s 0.3s backwards;
 }
 
 .crl {
@@ -154,7 +150,6 @@ a {
   right: 36rem;
   top: 19rem;
   rotate: 35deg;
-  animation: yClimb 1s 0.4s backwards;
 }
 
 .bal {
@@ -164,16 +159,17 @@ a {
   border-radius: 999px;
   right: 22rem;
   transition: 1s;
-  animation: yFall 1s 0.5s backwards;
 }
 
 .blue {
   background: var(--text-col-secn);
   translate: 0 10px;
+  animation: yFall 1.5s backwards ease-in-out;
 }
 
 .pink {
   background: var(--highlight-col);
+  animation: yClimb 1.5s backwards ease-in-out;
 }
 
 .extend {
@@ -199,10 +195,10 @@ a {
   height: auto;
   justify-self: center;
   color: var(--highlight-col);
-  animation: GetUp 1s 2s backwards;
+  animation: GetUp 1s 0.8s backwards;
 }
 .arrows-div svg {
-  animation: ArrowLoop 1s 5s infinite cubic-bezier(0.5, 0.03, 0.55, 0.92);
+  animation: ArrowLoop 1s infinite cubic-bezier(0.5, 0.03, 0.55, 0.92);
 }
 
 @keyframes GetUp {
@@ -359,6 +355,12 @@ a {
   transition: 300ms;
   padding: 25px;
 }
+.project-image span::after {
+  content: "[Link do repositorio no titulo abaixo]";
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.3333333333);
+}
 
 .footer {
   background: var(--bg-col-secn);
@@ -402,8 +404,8 @@ a {
     border-radius: 10px;
   }
   .hab-item button {
-    font-size: 35px;
-    width: 360px;
+    font-size: 30px;
+    width: 340px;
   }
   .hab-section {
     height: 70vh;
@@ -450,16 +452,19 @@ a {
     grid-template-columns: 1fr 2fr;
   }
   .skill-sect {
-    height: 80vh;
+    height: 60vh;
   }
   .skill-sect button:hover {
     translate: 30px 0;
+  }
+  .about-sect {
+    height: 60vh;
   }
   .main-content h1 {
     translate: -30px -70px;
   }
   .project-sect {
-    height: 80vh;
+    height: 55vh;
   }
   h2 {
     font-family: "Quicksand", sans-serif;
