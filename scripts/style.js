@@ -47,10 +47,6 @@ function changeDisplay() {
         title = 'Mais por vir...'
         p = 'Muitos outros projetos ainda vão ser acionados nessa página e muito provavelmente essa pagina também vai ser modificada, mas isso faz parte. Logo se você se interessou com qualquer projeto nesse site, sinta-se livre em me mandar um email e eu vou responder prontamente preparado para o trabalho!<br>gravyardgustavo@gmail.com'
     }
-    else if (this.id=='pyBtn') {
-        title = '( Python )'
-        p = ''
-    }
     //#endregion
     displayDiv.classList.remove('show')
     setTimeout(() => {
@@ -63,8 +59,6 @@ function changeDisplay() {
 htmlBtn.addEventListener('click', changeDisplay)
 cssBtn.addEventListener('click', changeDisplay)
 jsBtn.addEventListener('click', changeDisplay)
-pyBtn.addEventListener('click', changeDisplay)
-
 
 let navbarWrapper = document.querySelector('.header-navbar')
 
@@ -72,23 +66,19 @@ setTimeout(()=>{
     navbarWrapper.style.opacity=1
 }, 2000)
 
+let showMoreTab = document.querySelector("#more-projects")
+let showMoreBtn = document.querySelector("#view-more-projects")
 
-document.querySelector('.butao').addEventListener('click', () => {
-    let r = document.querySelector(':root')
-    
-    function randomInt(range = 10) {
-        let num = Math.floor(Math.random() * range)
-        return num
-    }
+showMoreTab.style.display='none'
 
-    function colorSelect() {
-        let color = '#' + randomInt() + randomInt() + randomInt()
-        return color
+showMoreBtn.addEventListener('click', ()=>{
+    if (showMoreTab.style.display == 'none') {
+        showMoreTab.style.display='grid'
+        showMoreTab.classList.add('animation')
+        showMoreBtn.textContent="> Ver Menos <"
+    } else {
+        showMoreTab.style.display='none'
+        showMoreTab.classList.remove('animation')
+        showMoreBtn.textContent="> Ver Mais <"
     }
-    
-    let col1 = colorSelect()
-    let col2 = colorSelect()
-    
-    r.style.setProperty('--highlight-col', col1)
-    r.style.setProperty('--text-col-secn', col2)
 })

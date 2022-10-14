@@ -109,7 +109,7 @@
                 </div>
             </div>
             <div class="about-exaple hidden">
-                <img src="images/svg/exaple.svg" alt="Pessoa em um computador" id="myPic" data-tilt>
+                <img src="images/svg/exaple.svg" alt="Pessoa em um computador" id="myPic">
             </div>
         </section>
         <section class="skill-sect">
@@ -142,7 +142,7 @@
             <div class="hidden">
                 <h2 class="main-title">[ Projetos ]</h2>
                 <div class="projects-list">
-                    <div class="project" data-tilt>
+                    <div class="project">
                         <img src="images/png/Project login.png" alt="Tela de login" class="project-img">
                         <div class="project-image">
                             <span>
@@ -152,7 +152,7 @@
                         </div>
                         <a href="https://github.com/Gravyard-Gay/login-screen" target="_blank"><span>Tela de Login</span></a>
                     </div>
-                    <div class="project" data-tilt>
+                    <div class="project">
                         <img src="images/png/Project Nav.png" alt="Barra de Navegação" class="project-img">
                         <div class="project-image">
                             <span>
@@ -163,7 +163,7 @@
                         </div>
                         <a href="https://github.com/Gravyard-Gay/animated-navbar" target="_blank"><span>Navbar Responsiva</span></a>
                     </div>
-                    <div class="project" data-tilt>
+                    <div class="project">
                         <img src="images/png/Project Py.png" alt="Terminal para um diario" class="project-img">
                         <div class="project-image">
                             <span>
@@ -174,7 +174,32 @@
                         <a href="https://github.com/Gravyard-Gay/automatic-diary" target="_blank"><span>Diario em Python</span></a>
                     </div>
                 </div>
-
+            </div>
+        </section>
+        <section class="projects-view-more">
+            <span class="hidden" id="view-more-projects">< Ver Mais ></Mais></span>
+            <div id="more-projects" class="projects-list-grid">
+                <div class="project">
+                    <img src="images/png/cards transparentes.png" alt="3 cartas transparentes" class="project-img">
+                    <div class="project-image">
+                        <span>
+                            Um conjunto de cartas transparentes que usam do vanilla-tilt
+                            para uma melhor interatividade.<br>
+                        </span>
+                    </div>
+                    <a href="https://github.com/Gravyard-Gay/Transparent-Card" target="_blank"><span>Cards Transparentes</span></a>
+                </div>
+                <div class="project">
+                    <img src="images/png/Project color.png" alt="Varias cores" class="project-img">
+                    <div class="project-image">
+                        <span>
+                            Um simples site voltado para artistas que cria automaticamente
+                            uma palheta de cores completa com apenas um botão.<br>
+                        </span>
+                    </div>
+                    <a href="https://github.com/Gravyard-Gay/Color-Randomizer" target="_blank"><span>Gerador de cores</span></a>
+                </div>
+                <span class="more-coming">Mais por vir...</span>
             </div>
         </section>
         <section class="footer">
@@ -187,5 +212,15 @@
     </main>
     <script src="scripts/style.js"></script>
     <script src="scripts/vanillaTilt.js"></script>
+    <script>
+        let tiltMode = true
+        document.addEventListener('DOMContentLoaded', ()=>{
+            let query = window.matchMedia("(min-width: 600px)")
+            if (query.matches) {
+                VanillaTilt.init(document.querySelectorAll(".project"));
+                VanillaTilt.init(document.querySelector("#myPic"));
+            }
+        })
+    </script>
 </body>
 </html>

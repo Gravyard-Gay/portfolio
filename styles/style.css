@@ -312,7 +312,6 @@ a {
 .projects-list {
   display: flex;
   text-align: center;
-  gap: 40px;
 }
 
 .project {
@@ -326,6 +325,7 @@ a {
   border-left: 2px solid var(--highlight-col);
   border-top: 2px solid var(--highlight-col);
   font-size: 20px;
+  text-align: center;
 }
 .project a {
   color: #fff;
@@ -360,6 +360,44 @@ a {
   font-size: 15px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.3333333333);
+}
+
+#view-more-projects {
+  opacity: 0.3;
+  height: fit-content;
+  font-size: 30px;
+  margin-bottom: 15px;
+  transition: 200ms;
+}
+#view-more-projects:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.animation {
+  animation: ent 300ms;
+}
+
+@keyframes ent {
+  from {
+    opacity: 0;
+    translate: 0 -20px;
+  }
+}
+.projects-view-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-col-secn);
+}
+
+.more {
+  display: flex;
+}
+
+.projects-list-grid {
+  display: grid;
+  gap: 40px;
 }
 
 .footer {
@@ -437,16 +475,32 @@ a {
     display: block;
     text-align: center;
   }
-  .project-sect .project {
-    scale: 0.7;
-    margin-top: -3rem;
-  }
   h2 {
     font-family: "Quicksand", sans-serif;
     font-size: 40px;
     color: var(--highlight-col);
   }
+  .projects-list-grid {
+    grid-template-columns: 1fr;
+    justify-self: center;
+  }
+  .project {
+    scale: 0.7;
+    margin-top: -3rem;
+  }
 }
+.more-coming {
+  justify-self: center;
+  align-self: center;
+  font-size: 40px;
+  opacity: 0.5;
+  transition: 300ms;
+  filter: drop-shadow(0 0 10px #fff);
+}
+.more-coming:hover {
+  opacity: 1;
+}
+
 @media only screen and (min-width: 600px) {
   .hab-selector {
     grid-template-columns: 1fr 2fr;
@@ -466,9 +520,15 @@ a {
   .project-sect {
     height: 55vh;
   }
+  .projects-list {
+    gap: 40px;
+  }
   h2 {
     font-family: "Quicksand", sans-serif;
     font-size: 70px;
     color: var(--highlight-col);
+  }
+  .projects-list-grid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }/*# sourceMappingURL=style.css.map */
