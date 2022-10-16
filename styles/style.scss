@@ -311,7 +311,7 @@ a {color: var(--highlight-col);}
     transition: 300ms;
     padding: 25px;
     span::after {
-        content: '[Link do repositorio no titulo abaixo]';
+        content: '[Link no titulo abaixo]';
         font-size: 15px;
         font-weight: 600;
         color: #fff5
@@ -407,15 +407,20 @@ a {color: var(--highlight-col);}
         justify-self: center;
     }
     .project {scale: 0.7; margin-top: -3rem;}
-}
-.more-coming {
-    justify-self: center;
-    align-self: center;
-    font-size: 40px;
-    opacity: 0.5;
-    transition: 300ms;
-    filter: drop-shadow(0 0 10px #fff);
-    &:hover{opacity: 1;}
+
+    #view-more-projects {
+        margin-top: 10rem;    
+    }
+
+    .more-coming {
+        justify-self: center;
+        align-self: center;
+        font-size: 40px;
+        opacity: 0.5;
+        transition: 300ms;
+        filter: drop-shadow(0 0 10px #fff);
+        &:hover{opacity: 1;}
+    }
 }
 //Big Screen
 @media only screen and (min-width: 600px) {

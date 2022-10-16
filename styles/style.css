@@ -356,7 +356,7 @@ a {
   padding: 25px;
 }
 .project-image span::after {
-  content: "[Link do repositorio no titulo abaixo]";
+  content: "[Link no titulo abaixo]";
   font-size: 15px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.3333333333);
@@ -488,19 +488,21 @@ a {
     scale: 0.7;
     margin-top: -3rem;
   }
+  #view-more-projects {
+    margin-top: 10rem;
+  }
+  .more-coming {
+    justify-self: center;
+    align-self: center;
+    font-size: 40px;
+    opacity: 0.5;
+    transition: 300ms;
+    filter: drop-shadow(0 0 10px #fff);
+  }
+  .more-coming:hover {
+    opacity: 1;
+  }
 }
-.more-coming {
-  justify-self: center;
-  align-self: center;
-  font-size: 40px;
-  opacity: 0.5;
-  transition: 300ms;
-  filter: drop-shadow(0 0 10px #fff);
-}
-.more-coming:hover {
-  opacity: 1;
-}
-
 @media only screen and (min-width: 600px) {
   .hab-selector {
     grid-template-columns: 1fr 2fr;
