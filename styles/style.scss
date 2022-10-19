@@ -7,6 +7,7 @@
     --highlight-col: #ff32a1;
     --fix-border-radius: 2rem;
     --svg-size: 3.8rem;
+    --trans-delay-tameplate: 300ms;
 }
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 
@@ -25,9 +26,9 @@
     translate: 0;
 }
 
-@mixin Sect($wid:100vh) {
+@mixin Sect($hei:100vh) {
     background: var(--bg-col-secn);
-    height: $wid;
+    height: $hei;
     padding: 5rem;
     p {font-size: 22px;}
 }
@@ -56,38 +57,54 @@ a {color: var(--highlight-col);}
 }
 //#endregion
 //#region [Navbar]
-.header-navbar {
-    background-color: var(--nav-bg-col);
-    width: 100vw;
-    height: 90px;
-    translate: 0 -15px;
+.navbar {
+    background: var(--nav-bg-col);
+    padding: 0;
+    margin: 0;
     position: fixed;
-    z-index: 1;
-    filter: drop-shadow(0 0 40px var(--nav-bg-col));
-    animation: opacityGrow 1s 2s backwards;
-    display: none;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
-@keyframes opacityGrow {from{opacity: 0; filter: blur(5px);}}
 .nav-list {
     display: flex;
-    justify-content: center;
-    list-style: none;
-    translate: 25px;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
     width: 100%;
+    height: 100px;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--trans-delay-tameplate);
+    font-size: 14px;
+    svg {
+        scale: 1.3;
+        margin-bottom: 8px;
+        transition: var(--trans-delay-tameplate);
+    }
     a {
+        color: white;
         display: flex;
-        justify-content: center;
-        translate: -50px 5px;
-        svg {
-            width: var(--svg-size);
-            height: var(--svg-size);
-            transition: 200ms;
-            filter: grayscale(1);
+        flex-direction: column-reverse;
+        align-items: center;
+        text-decoration: none;
+        margin-top: 5px;
+        transition: var(--trans-delay-tameplate);
+        &:hover {
+            color: var(--highlight-col);
         }
     }
-    &:hover svg {filter: grayscale(0);}
+    &:hover {
+        background: var(--bg-col-secn);
+        svg {scale: 1.8; color: var(--highlight-col);}
+        a {color: var(--highlight-col);}
+    }
 }
 //#endregion
 //#region [landing]
@@ -421,9 +438,15 @@ a {color: var(--highlight-col);}
         filter: drop-shadow(0 0 10px #fff);
         &:hover{opacity: 1;}
     }
+    .navbar {bottom: 0; height: 95px; background: #21212170}; .nav-item{font-size: 12px; span {display: none;}}
 }
 //Big Screen
 @media only screen and (min-width: 600px) {
+    h2 {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 70px;
+        color: var(--highlight-col);
+    }
     .hab-selector {grid-template-columns: 1fr 2fr;}
     .skill-sect {
         height: 60vh;
@@ -435,12 +458,25 @@ a {color: var(--highlight-col);}
     .main-content h1 {translate: -30px -70px;}
     .project-sect {height: 55vh;}
     .projects-list {gap: 40px;}
-    h2 {
-        font-family: 'Quicksand', sans-serif;
-        font-size: 70px;
-        color: var(--highlight-col);
-    }
     .projects-list-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .navbar {
+        width: 100px;
+        height: 100%;
+        opacity: 0.2;
+        transition: var(--trans-delay-tameplate);
+        translate: -40px;
+        &:hover {
+            opacity: 1;
+            translate: 0;
+        }
+    }
+    .nav-list {
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-item:last-of-type {margin-top: auto;}
 }
