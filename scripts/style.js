@@ -60,11 +60,6 @@ htmlBtn.addEventListener('click', changeDisplay)
 cssBtn.addEventListener('click', changeDisplay)
 jsBtn.addEventListener('click', changeDisplay)
 
-let navbarWrapper = document.querySelector('.header-navbar')
-
-setTimeout(()=>{
-    navbarWrapper.style.opacity=1
-}, 2000)
 
 let showMoreTab = document.querySelector("#more-projects")
 let showMoreBtn = document.querySelector("#view-more-projects")

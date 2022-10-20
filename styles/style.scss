@@ -1,13 +1,13 @@
 :root {
-    --bg-col-main: #2b282f;
-    --bg-col-secn: #1b191d;
-    --nav-bg-col: #212121;
-    --text-col-main: #fff;
-    --text-col-secn: #32dceb;
-    --highlight-col: #ff32a1;
+    --bg-col-main:  #2b282f;
+    --bg-col-secn:  #1b191d;
+    --nav-bg-col:   #212121;
+    --text-col-main:#fff;
+    --text-col-secn:#32dceb;
+    --highlight-col:#ff32a1;
     --fix-border-radius: 2rem;
     --svg-size: 3.8rem;
-    --trans-delay-tameplate: 300ms;
+    --trans-delay-tameplate: 200ms;
 }
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 
@@ -52,7 +52,7 @@ a {color: var(--highlight-col);}
 ::-webkit-scrollbar-thumb {
     background: var(--bg-col-main);
     border-radius: 22px;
-    transition: 200ms;
+    transition: var(--trans-delay-tameplate);
     &:hover {background: var(--highlight-col);}
 }
 //#endregion
@@ -89,7 +89,7 @@ a {color: var(--highlight-col);}
         transition: var(--trans-delay-tameplate);
     }
     a {
-        color: white;
+        color: var(--text-col-main);
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
@@ -106,6 +106,41 @@ a {color: var(--highlight-col);}
         a {color: var(--highlight-col);}
     }
 }
+// Nav Theme
+.theme-tab {
+    position: absolute;
+    width: 350px;
+    height: 100px;
+    background-color: var(--bg-col-secn);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: var(--trans-delay-tameplate);
+    z-index: -1000;
+    border-top-right-radius: 99px;
+    border-bottom-right-radius: 99px;
+    div {
+        width: 70px;
+        height: 70px;
+        border-radius: 99px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: var(--trans-delay-tameplate);
+        &:hover {
+            width: 90px;
+            height: 90px;
+        }
+    }
+}
+
+#themes-button.opened .theme-tab {translate: 14rem;}
+
+#theme-dark {background: linear-gradient(#000, #111);color: #fff;}
+#theme-ligth {background: linear-gradient(#fff, #aaa);color: #000;}
+#theme-purple {background: linear-gradient(#407, #508);color: #fff;}
+
 //#endregion
 //#region [landing]
 .landing-sect {
@@ -223,14 +258,14 @@ a {color: var(--highlight-col);}
 .about-exaple {
     img {
         width: 50vw;
-        transition: 100ms;
+        transition: var(--trans-delay-tameplate);
         &:hover {scale: 1.1;}
     }
 }
 @keyframes OpacityEnter {to {opacity: 1;}}
 .landing-link {
     text-decoration: none;
-    transition: 200ms;
+    transition: var(--trans-delay-tameplate);
     &:hover {color: var(--text-col-secn);}
 }
 
@@ -238,6 +273,7 @@ a {color: var(--highlight-col);}
 //#region [Skill]
 .skill-sect {
     @include Sect();
+    h2 {text-align: center;}
     .hab-selector {
         display: grid;
         width: 100%;
@@ -251,6 +287,14 @@ a {color: var(--highlight-col);}
         gap: 15px;
         justify-self: center;
         translate: -25px;
+        &::before {
+            content: 'Clique nos botões abaixo';
+            position: absolute;
+            width: 90%;
+            color: #fff4;
+            text-align: center;
+            top: -2rem;
+        }
     }
     button {
         font-family: 'Quicksand';
@@ -260,16 +304,16 @@ a {color: var(--highlight-col);}
         border-radius: 100px;
         color: var(--text-col-secn);
         border: 2px solid var(--text-col-secn);
-        transition: 200ms;
+        transition: var(--trans-delay-tameplate);
         &:hover {
             background-color: var(--highlight-col);
             border: 2px solid var(--highlight-col);
-            color: #fff;
+            color: var(--bg-col-secn);
             cursor: pointer;
         }
     }
     .hab-display {
-        border: 2px solid #2b282f;
+        border: 2px solid var(--nav-bg-col);
         padding: 20px;
         border-radius: 22px;
     }
@@ -287,6 +331,7 @@ a {color: var(--highlight-col);}
     padding: 40px;
     display: flex;
     justify-content: center;
+    h2 {text-align: center;}
 }
 
 .projects-list {
@@ -307,12 +352,12 @@ a {color: var(--highlight-col);}
     font-size: 20px;
     text-align: center;
     a {
-        color: #fff;
+        color: var(--text-col-main);
         text-decoration: none;
         cursor: pointer;
         font-size: 32px;
     }
-    img {width: 500px;transition: 300ms;}
+    img {width: 500px;transition: var(--trans-delay-tameplate);}
     &:hover {
         background: var(--highlight-col);
         img {filter: brightness(0.3);}
@@ -323,15 +368,15 @@ a {color: var(--highlight-col);}
 .project-image {
     position: absolute;
     top: 0;
-    background: #1b191d99;
+    background: var(--bg-col-main);
     opacity: 0;
-    transition: 300ms;
+    transition: var(--trans-delay-tameplate);
     padding: 25px;
     span::after {
         content: '[Link no titulo abaixo]';
         font-size: 15px;
         font-weight: 600;
-        color: #fff5
+        color: var(--text-col-main);
     }
 }
 
@@ -341,10 +386,10 @@ a {color: var(--highlight-col);}
     &:hover {opacity: 0.8; cursor: pointer;}
     font-size: 30px;
     margin-bottom: 15px;
-    transition: 200ms;
+    transition: var(--trans-delay-tameplate);
 }
 .animation {
-    animation: ent 300ms;
+    animation: ent var(--trans-delay-tameplate);
 }
 @keyframes ent {
     from {opacity: 0; translate: 0 -20px;}
@@ -358,7 +403,6 @@ a {color: var(--highlight-col);}
 .more {display: flex;}
 .projects-list-grid {
     display: grid;
-    gap: 40px;
 }
 
 //#endregion
@@ -368,8 +412,8 @@ a {color: var(--highlight-col);}
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff6;
-    a {color: #fff6;}
+    color: var(--text-col-main);
+    a {color: var(--text-col-main);}
 }
 
 //Small Screen
@@ -408,7 +452,7 @@ a {color: var(--highlight-col);}
     .projects-list {flex-direction: column;}
     .main-content h1 {translate: 57px -70px;}
     .project-sect {
-        height: 100vh;
+        height: 85vh;
         h2 {
             display: block;
             text-align: center;
@@ -426,7 +470,7 @@ a {color: var(--highlight-col);}
     .project {scale: 0.7; margin-top: -3rem;}
 
     #view-more-projects {
-        margin-top: 10rem;    
+        margin-top: 18rem;    
     }
 
     .more-coming {
@@ -434,11 +478,15 @@ a {color: var(--highlight-col);}
         align-self: center;
         font-size: 40px;
         opacity: 0.5;
-        transition: 300ms;
-        filter: drop-shadow(0 0 10px #fff);
+        transition: var(--trans-delay-tameplate);
+        filter: drop-shadow(0 0 10px --text-col-main);
         &:hover{opacity: 1;}
     }
     .navbar {bottom: 0; height: 95px; background: #21212170}; .nav-item{font-size: 12px; span {display: none;}}
+    .theme-tab {
+        translate: -12.5rem -6.5rem;
+    }
+    #themes-button.opened .theme-tab {translate: -34rem -6.5rem;}
 }
 //Big Screen
 @media only screen and (min-width: 600px) {
@@ -460,12 +508,13 @@ a {color: var(--highlight-col);}
     .projects-list {gap: 40px;}
     .projects-list-grid {
         grid-template-columns: 1fr 1fr 1fr;
-    }
+        gap: 40px;
+}
     .navbar {
         width: 100px;
         height: 100%;
-        opacity: 0.2;
         transition: var(--trans-delay-tameplate);
+        opacity: 0.2;
         translate: -40px;
         &:hover {
             opacity: 1;
@@ -479,4 +528,5 @@ a {color: var(--highlight-col);}
         justify-content: space-between;
     }
     .nav-item:last-of-type {margin-top: auto;}
+    #themes-button.opened .theme-tab {translate: -15rem;}
 }
