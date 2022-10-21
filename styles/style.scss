@@ -425,7 +425,6 @@ a {color: var(--highlight-col);}
 
 //Small Screen
 @media only screen and (max-width: 600px) {
-    body {width: 100vw;}
     .about-sect {
         padding: 12px;
         grid-template-columns: 6fr;
@@ -490,7 +489,7 @@ a {color: var(--highlight-col);}
         filter: drop-shadow(0 0 10px --text-col-main);
         &:hover{opacity: 1;}
     }
-    .navbar {bottom: 0; height: 95px; background: #21212170}; .nav-item{font-size: 12px; span {display: none;}}
+    .navbar {bottom: 0; height: 95px; width: 100vw; background: #21212170}; .nav-item{font-size: 12px; span {display: none;}}
     .theme-tab {translate: -13.2rem -6.5rem;}
     #themes-button.opened .theme-tab {translate: -34rem -6.5rem;}
 }

@@ -503,9 +503,6 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    width: 100vw;
-  }
   .about-sect {
     padding: 12px;
     grid-template-columns: 6fr;
@@ -593,6 +590,7 @@ a {
   .navbar {
     bottom: 0;
     height: 95px;
+    width: 100vw;
     background: rgba(33, 33, 33, 0.4392156863);
   }
   .nav-item {
