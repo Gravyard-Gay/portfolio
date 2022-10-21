@@ -503,23 +503,8 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  .navbar {
-    bottom: 0;
-    height: 95px;
-    width: 100vw;
-    background: rgba(33, 33, 33, 0.4392156863);
-  }
-  .nav-item {
-    font-size: 12px;
-  }
-  .nav-item span {
+  nav {
     display: none;
-  }
-  .theme-tab {
-    translate: -13.2rem -6.5rem;
-  }
-  #themes-button.opened .theme-tab {
-    translate: -34rem -6.5rem;
   }
   .about-sect {
     padding: 12px;
