@@ -107,7 +107,7 @@ a {
   color: var(--highlight-col);
 }
 .nav-item:hover {
-  background: var(--bg-col-secn);
+  background: var(--bg-col-main);
 }
 .nav-item:hover svg {
   scale: 1.8;
@@ -121,7 +121,7 @@ a {
   position: absolute;
   width: 350px;
   height: 100px;
-  background-color: var(--bg-col-secn);
+  background-color: var(--bg-col-main);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,12 +225,14 @@ a {
 
 .blue {
   background: var(--text-col-secn);
+  color: var(--text-col-secn);
   translate: 0 10px;
   animation: yFall 1.5s backwards ease-in-out;
 }
 
 .pink {
   background: var(--highlight-col);
+  color: var(--highlight-col);
   animation: yClimb 1.5s backwards ease-in-out;
 }
 
@@ -492,6 +494,10 @@ a {
   color: var(--text-col-main);
 }
 
+.landing-shape {
+  filter: drop-shadow(0 0 8px);
+}
+
 @media only screen and (max-width: 600px) {
   .about-sect {
     padding: 12px;
@@ -646,7 +652,10 @@ a {
   .nav-item:last-of-type {
     margin-top: auto;
   }
+  .theme-tab {
+    translate: -14rem;
+  }
   #themes-button.opened .theme-tab {
-    translate: -15rem;
+    translate: 14rem;
   }
 }/*# sourceMappingURL=style.css.map */

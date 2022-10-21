@@ -101,7 +101,7 @@ a {color: var(--highlight-col);}
         }
     }
     &:hover {
-        background: var(--bg-col-secn);
+        background: var(--bg-col-main);
         svg {scale: 1.8; color: var(--highlight-col);}
         a {color: var(--highlight-col);}
     }
@@ -111,7 +111,7 @@ a {color: var(--highlight-col);}
     position: absolute;
     width: 350px;
     height: 100px;
-    background-color: var(--bg-col-secn);
+    background-color: var(--bg-col-main);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,11 +205,13 @@ a {color: var(--highlight-col);}
 
 .blue {
     background: var(--text-col-secn);
+    color: var(--text-col-secn);
     translate: 0 10px;
     animation: yFall 1.5s backwards ease-in-out;
 }
 .pink {
     background: var(--highlight-col);
+    color: var(--highlight-col);
     animation: yClimb 1.5s backwards ease-in-out;
 }
 .extend {width: 1250px;}
@@ -416,6 +418,11 @@ a {color: var(--highlight-col);}
     a {color: var(--text-col-main);}
 }
 
+
+.landing-shape {
+    filter: drop-shadow(0 0 8px );
+}
+
 //Small Screen
 @media only screen and (max-width: 600px) {
     .about-sect {
@@ -483,9 +490,7 @@ a {color: var(--highlight-col);}
         &:hover{opacity: 1;}
     }
     .navbar {bottom: 0; height: 95px; background: #21212170}; .nav-item{font-size: 12px; span {display: none;}}
-    .theme-tab {
-        translate: -12.5rem -6.5rem;
-    }
+    .theme-tab {translate: -12.5rem -6.5rem;}
     #themes-button.opened .theme-tab {translate: -34rem -6.5rem;}
 }
 //Big Screen
@@ -528,5 +533,6 @@ a {color: var(--highlight-col);}
         justify-content: space-between;
     }
     .nav-item:last-of-type {margin-top: auto;}
-    #themes-button.opened .theme-tab {translate: -15rem;}
+    .theme-tab {translate: -14rem}
+    #themes-button.opened .theme-tab {translate: 14rem;}
 }
