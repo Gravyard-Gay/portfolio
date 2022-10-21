@@ -495,26 +495,6 @@ a {color: var(--highlight-col);}
 }
 //Big Screen
 @media only screen and (min-width: 600px) {
-    h2 {
-        font-family: 'Quicksand', sans-serif;
-        font-size: 70px;
-        color: var(--highlight-col);
-    }
-    .hab-selector {grid-template-columns: 1fr 2fr;}
-    .skill-sect {
-        height: 60vh;
-        button:hover {
-            translate: 30px 0;
-        }
-    }
-    .about-sect {height: 60vh;}
-    .main-content h1 {translate: -30px -70px;}
-    .project-sect {height: 55vh;}
-    .projects-list {gap: 40px;}
-    .projects-list-grid {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 40px;
-}
     .navbar {
         width: 100px;
         height: 100%;
@@ -535,4 +515,24 @@ a {color: var(--highlight-col);}
     .nav-item:last-of-type {margin-top: auto;}
     .theme-tab {translate: -14rem}
     #themes-button.opened .theme-tab {translate: 14rem;}
+    h2 {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 70px;
+        color: var(--highlight-col);
+    }
+    .hab-selector {grid-template-columns: 1fr 2fr;}
+    .skill-sect {
+        height: 60vh;
+        button:hover {
+            translate: 30px 0;
+        }
+    }
+    .about-sect {height: 60vh;}
+    .main-content h1 {translate: -30px -70px;}
+    .project-sect {height: 55vh;}
+    .projects-list {gap: 40px;}
+    .projects-list-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+}
 }
