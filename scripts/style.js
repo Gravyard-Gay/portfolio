@@ -77,3 +77,14 @@ showMoreBtn.addEventListener('click', ()=>{
         showMoreBtn.textContent="> Ver Mais <"
     }
 })
+
+// Navbar smooth navigation
+
+document.querySelectorAll('.nav-link-ancor[href^="#"]').forEach(ancor => {
+    ancor.addEventListener('click', function(e){
+        e.preventDefault()
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        })
+    })
+})
