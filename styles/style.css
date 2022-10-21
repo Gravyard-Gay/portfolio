@@ -3,10 +3,11 @@
 :root {
   --bg-col-main: #2b282f;
   --bg-col-secn: #1b191d;
-  --nav-bg-col: #212121;
+  --nav-bg-col: #313236;
   --text-col-main:#fff;
   --text-col-secn:#32dceb;
   --highlight-col:#ff32a1;
+  --nav-hover-col: #303138;
   --fix-border-radius: 2rem;
   --svg-size: 3.8rem;
   --trans-delay-tameplate: 200ms;
@@ -107,7 +108,7 @@ a {
   color: var(--highlight-col);
 }
 .nav-item:hover {
-  background: var(--bg-col-main);
+  background: var(--nav-hover-col);
 }
 .nav-item:hover svg {
   scale: 1.8;
@@ -121,7 +122,7 @@ a {
   position: absolute;
   width: 350px;
   height: 100px;
-  background-color: var(--bg-col-main);
+  background-color: var(--nav-hover-col);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -428,7 +429,7 @@ a {
 .project-image {
   position: absolute;
   top: 0;
-  background: var(--bg-col-main);
+  background-color: var(--bg-col-main);
   opacity: 0;
   transition: var(--trans-delay-tameplate);
   padding: 25px;
@@ -490,7 +491,10 @@ a {
 .footer p {
   font-size: 22px;
 }
-.footer a {
+.footer span {
+  opacity: 0.4;
+}
+.footer span a {
   color: var(--text-col-main);
 }
 
@@ -499,6 +503,9 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+  }
   .about-sect {
     padding: 12px;
     grid-template-columns: 6fr;
@@ -595,7 +602,7 @@ a {
     display: none;
   }
   .theme-tab {
-    translate: -12.5rem -6.5rem;
+    translate: -13.2rem -6.5rem;
   }
   #themes-button.opened .theme-tab {
     translate: -34rem -6.5rem;

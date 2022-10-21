@@ -1,10 +1,11 @@
 :root {
     --bg-col-main:  #2b282f;
     --bg-col-secn:  #1b191d;
-    --nav-bg-col:   #212121;
+    --nav-bg-col:   #313236;
     --text-col-main:#fff;
     --text-col-secn:#32dceb;
     --highlight-col:#ff32a1;
+    --nav-hover-col: #303138;
     --fix-border-radius: 2rem;
     --svg-size: 3.8rem;
     --trans-delay-tameplate: 200ms;
@@ -101,7 +102,7 @@ a {color: var(--highlight-col);}
         }
     }
     &:hover {
-        background: var(--bg-col-main);
+        background: var(--nav-hover-col);
         svg {scale: 1.8; color: var(--highlight-col);}
         a {color: var(--highlight-col);}
     }
@@ -111,7 +112,7 @@ a {color: var(--highlight-col);}
     position: absolute;
     width: 350px;
     height: 100px;
-    background-color: var(--bg-col-main);
+    background-color: var(--nav-hover-col);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -370,7 +371,7 @@ a {color: var(--highlight-col);}
 .project-image {
     position: absolute;
     top: 0;
-    background: var(--bg-col-main);
+    background-color: var(--bg-col-main);
     opacity: 0;
     transition: var(--trans-delay-tameplate);
     padding: 25px;
@@ -415,9 +416,8 @@ a {color: var(--highlight-col);}
     justify-content: center;
     align-items: center;
     color: var(--text-col-main);
-    a {color: var(--text-col-main);}
+    span {opacity: 0.4; a {color: var(--text-col-main);}}
 }
-
 
 .landing-shape {
     filter: drop-shadow(0 0 8px );
@@ -425,6 +425,7 @@ a {color: var(--highlight-col);}
 
 //Small Screen
 @media only screen and (max-width: 600px) {
+    body {width: 100vw;}
     .about-sect {
         padding: 12px;
         grid-template-columns: 6fr;
@@ -490,7 +491,7 @@ a {color: var(--highlight-col);}
         &:hover{opacity: 1;}
     }
     .navbar {bottom: 0; height: 95px; background: #21212170}; .nav-item{font-size: 12px; span {display: none;}}
-    .theme-tab {translate: -12.5rem -6.5rem;}
+    .theme-tab {translate: -13.2rem -6.5rem;}
     #themes-button.opened .theme-tab {translate: -34rem -6.5rem;}
 }
 //Big Screen

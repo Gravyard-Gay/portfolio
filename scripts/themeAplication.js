@@ -6,15 +6,17 @@ let themes = [
         bg1:    '#2b282f',
         bg2:    '#1b191d',
         bgNav:  '#212121',
+        hoNav:  '#303138',
         main:   '#ff32a1',
         scnd:   '#32dceb', 
         text:   '#fff',
         id: 0
     },
     {
-        bg1:    '#ddd',
-        bg2:    '#bbb',
+        bg1:    '#ccc',
+        bg2:    '#aaa',
         bgNav:  '#eee',
+        hoNav:  '#fff',
         main:   '#b5285e',
         scnd:   '#1e2cc9',
         text:   '#0b0b0b',
@@ -24,6 +26,7 @@ let themes = [
         bg1:    '#1f0f2f',
         bg2:    '#1a1020',
         bgNav:  '#201f3f',
+        hoNav:  '#18142e',
         main:   '#a0f',
         scnd:   '#2f5', //Em preto fica maravilhoso
         text:   '#fff',
@@ -64,6 +67,7 @@ function updateTheme(theme) {
     r.style.setProperty('--bg-col-main',     theme.bg1)
     r.style.setProperty('--bg-col-secn',     theme.bg2)
     r.style.setProperty('--nav-bg-col',      theme.bgNav)
+    r.style.setProperty('--nav-hover-col',   theme.hoNav)
     r.style.setProperty('--highlight-col',   theme.main)
     r.style.setProperty('--text-col-secn',   theme.scnd)
     r.style.setProperty('--text-col-main',   theme.text)
