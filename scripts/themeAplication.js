@@ -24,7 +24,7 @@ let themes = [
     },
     {
         bg1:    '#1f0f2f',
-        bg2:    '#1a1020',
+        bg2:    '#18121c',
         bgNav:  '#201f3f',
         hoNav:  '#18142e',
         main:   '#a0f',

@@ -165,6 +165,7 @@ a {color: var(--highlight-col);}
 }
 
 //#region [Shapes]
+#inter {transition: .5s; &:hover {filter: brightness(100%);}}
 @mixin shapeProp {
     position: absolute;   
 }
@@ -215,7 +216,7 @@ a {color: var(--highlight-col);}
     color: var(--highlight-col);
     animation: yClimb 1.5s backwards ease-in-out;
 }
-.extend {width: 1250px;}
+.extend {width: 1350px; translate: 60px;}
 
 @keyframes yFall {
     from {translate: 0 -10rem;}
@@ -258,6 +259,7 @@ a {color: var(--highlight-col);}
     display: grid;
     grid-template-columns: 40vw 1fr;
 }
+#myPic {translate: 0 -13rem;}
 .about-exaple {
     img {
         width: 50vw;
@@ -420,7 +422,7 @@ a {color: var(--highlight-col);}
 }
 
 .landing-shape {
-    filter: drop-shadow(0 0 8px );
+    filter: drop-shadow(0 0 10px);
 }
 
 //Small Screen
@@ -490,6 +492,9 @@ a {color: var(--highlight-col);}
         filter: drop-shadow(0 0 10px --text-col-main);
         &:hover{opacity: 1;}
     }
+    #myPic {
+        translate: 0 3rem;
+    }
 }
 //Big Screen
 @media only screen and (min-width: 600px) {
@@ -532,5 +537,5 @@ a {color: var(--highlight-col);}
     .projects-list-grid {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 40px;
-}
+    }
 }
