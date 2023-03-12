@@ -37,7 +37,7 @@ function changeDisplay() {
     //#region [ Text deciding ]
     if (this.id=='htmlBtn') {
         title = 'Cards Transparentes'
-        p = 'Cards animados que reagem com css e com o <a target="_blank" href="https://micku7zu.github.io/vanilla-tilt.js/">vanilla_tilt.js</a> que suportam todos os tipos de mídia, perfeitos para serem usados para expor informações de forma mais intereçante e criativa. <br> <a target="_blank" href="https://github.com/Gravyard-Gay/Transparent-Card">Repositório do Github</a>'
+        p = 'Cards animados que reagem com css e com o <a target="_blank" href="https://micku7zu.github.io/vanilla-tilt.js/">vanilla_tilt.js</a> que suportam todos os tipos de mídia, perfeitos para serem usados para expor informações de forma mais interessante e criativa. <br> <a target="_blank" href="https://github.com/Gravyard-Gay/Transparent-Card">Repositório do Github</a>'
     }
     else if (this.id=='cssBtn') {
         title = 'Color Randomizer'

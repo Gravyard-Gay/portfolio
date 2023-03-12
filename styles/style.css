@@ -186,6 +186,13 @@ a {
     filter: blur(20px);
   }
 }
+#inter {
+  transition: 0.5s;
+}
+#inter:hover {
+  filter: brightness(100%);
+}
+
 .sqr {
   position: absolute;
   width: 250px;
@@ -238,7 +245,8 @@ a {
 }
 
 .extend {
-  width: 1250px;
+  width: 1350px;
+  translate: 60px;
 }
 
 @keyframes yFall {
@@ -291,6 +299,10 @@ a {
 }
 .about-sect p {
   font-size: 22px;
+}
+
+#myPic {
+  translate: 0 -13rem;
 }
 
 .about-exaple img {
@@ -499,7 +511,7 @@ a {
 }
 
 .landing-shape {
-  filter: drop-shadow(0 0 8px);
+  filter: drop-shadow(0 0 10px);
 }
 
 @media only screen and (max-width: 600px) {
@@ -589,6 +601,9 @@ a {
   }
   .more-coming:hover {
     opacity: 1;
+  }
+  #myPic {
+    translate: 0 3rem;
   }
 }
 @media only screen and (min-width: 600px) {
